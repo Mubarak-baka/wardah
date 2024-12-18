@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardah's Photo Album</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 85%;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            overflow: hidden; /* Ensures rounded corners */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            border-radius: 25px; /* Slightly increase border radius on hover */
+        }
+        .card img {
+            width: 100%;  /* Makes the image take full width */
+            height: auto; /* Maintains the aspect ratio of the image */
+            object-fit: cover; /* Ensures the image covers the space without distorting */
+            border-bottom: 5px solid #ff9a9e; /* Adds a decorative border at the bottom */
+        }
+        .card-body {
+            padding: 20px;
+            background: #fff;
+            border-top: 3px solid #ff9a9e; /* Adds a border at the top of the card body */
+            border-radius: 0 0 15px 15px; /* Rounded corners for the card body */
+        }
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-style: italic;
+            font-size: 1.1em;
+        }
+        .card-title {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Albamu ya Picha ya Wardah</h1>
+        <p class="text-center">Kwa Wardah mpendwa wangu, upendo wa maisha yangu ❤️</p>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+            <!-- Photo Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./picha/WhatsApp Image 2024-12-14 at 9.37.00 PM.jpeg" class="card-img-top" alt="Photo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Wakati wa Kukumbuka</h5>
+                        <p class="card-text">Kila picha nawe ni hazina ya upendo na furaha.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./picha/WhatsApp Image 2024-12-15 at 12.04.19 AM.jpeg" class="card-img-top" alt="Photo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Furaha Safi</h5>
+                        <p class="card-text">Unang'aza maisha yangu kwa tabasamu lako la kuvutia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./picha/WhatsApp Image 2024-12-15 at 12.06.34 AM.jpeg" class="card-img-top" alt="Photo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Milele na Daima</h5>
+                        <p class="card-text">Pamoja nawe, kila wakati huhisi kama uchawi.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./picha/WhatsApp Image 2024-12-16 at 1.01.01 AM.jpeg" class="card-img-top" alt="Photo 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Uzuri Wako</h5>
+                        <p class="card-text">Urembo wako ni nuru inayong'aa kila siku.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./picha/WhatsApp Image 2024-12-16 at 12.58.50 AM.jpeg" class="card-img-top" alt="Photo 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Matembezi Yetu</h5>
+                        <p class="card-text">Kila safari nawe ni kumbukumbu isiyosahaulika.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
